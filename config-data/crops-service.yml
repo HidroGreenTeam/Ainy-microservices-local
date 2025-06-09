@@ -1,20 +1,20 @@
-# Application Configuration
 spring:
   application:
-    name: user-service
-    
+    name: crops-service
+
 server:
-  port: 8082
+  port: 8083
   error:
     include-message: always
     include-binding-errors: always
+
   jmx:
     enabled: false
-
+# Eureka Client
 eureka:
   instance:
-    hostname: user-service
-    appname: user-service
+    hostname: crops-service
+    appname: crops-service
     instance-id: ${spring.application.name}:${random.value}
     prefer-ip-address: true
   client:
