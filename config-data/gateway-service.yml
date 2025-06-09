@@ -26,3 +26,8 @@ spring:
           uri: lb://user-service
           predicates:
             - Path=/api/v1/users/**,/api/v1/authentication/**, /swagger-ui.html, /swagger-ui/**, /swagger-resources/**, /webjars/**, /v3/api-docs/**
+        - id: crops-service
+          uri: lb://crops-service
+          predicates:
+            - Path=/api/v1/crops/**, /swagger-ui.html, /swagger-ui/**, /swagger-resources/**, /webjars/**, /v3/api-docs/**
+
